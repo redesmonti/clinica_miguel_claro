@@ -15,15 +15,15 @@
               <div class="item active">
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/img/slide1.png" alt="">
                 <div class="carousel-caption">
-                  <h3>Hola</h3>
-                  <p>Hola</p>
+                  <h3><img src="http://localhost/clinica_mc/wp-content/themes/clinica_miguel_claro/assets/img/logo_miguelclarohd.png"></h3>
+                  <p>Especialistas con pacientes complejos</p>
                 </div>
               </div>
               <div class="item">
-                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/img/slide1.png" alt="">
+                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/img/slide2.png" alt="">
                 <div class="carousel-caption">
-                  <h3>Hola</h3>
-                  <p>Hola</p>
+                  <h3><img src="http://localhost/clinica_mc/wp-content/themes/clinica_miguel_claro/assets/img/logo_miguelclarohd.png"></h3>
+                  <p>Primera y única Clinica Vascular en Chile</p>
                 </div>
               </div>
             </div>
@@ -65,7 +65,7 @@
           </p>
         </div>
         <div class="foto1">
-        	<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/img/foto2.png" alt="">
+        	<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/img/3.png" alt="">
         </div>
         <div class="bloque-texto1">
           <h2>Título</h2>
@@ -73,7 +73,7 @@
           </p>
         </div>
         <div class="foto2">
-        	<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/img/foto2.png" alt="">
+        	<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/img/4.png" alt="">
         </div>
         <div class="bloque-texto1">
           <h2>Título</h2>
@@ -81,7 +81,7 @@
           </p>
         </div>
         <div class="foto3">
-        	<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/img/foto2.png" alt="">
+        	<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/img/5.png" alt="">
         </div>
       </div>
     </div>

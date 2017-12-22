@@ -14,8 +14,7 @@
             $args = array(
             'post_status' => 'publish',
             'post_type' => 'Especialistas',
-            'orderby' => 'title',
-            'order' => 'ASC',
+            
             'posts_per_page' => '1',
             'showposts' => '1'
             );
@@ -25,11 +24,14 @@
             <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
             <?php if(!empty($url)){ ?>
         	        <div class="contenedor-info-especialistas">
-                        <div class="foto">
+                        <div class="foto" id="demo-<?php the_id(); ?>">
             	           <?php  if ( has_post_thumbnail() ) { the_post_thumbnail('medium', array('class' => 'img-responsive')); }?>
                         </div>
-                        <h1><?php the_title(); ?></h1>
-        	            <h5 class="info"><?php the_content(); ?></h5>
+                        <div class="info-especialista">
+                            <h1><?php the_title(); ?></h1>
+                            a<h5 class="info"><?php the_content(); ?></h5>
+                        </div>
+                        
                         <?php } ?>
         	        </div>
                 <?php $i++;endwhile; endif; ?>
@@ -53,7 +55,7 @@
                         'post_type' => 'Especialistas',
                         'orderby' => 'title',
                         'order' => 'ASC',
-                        'posts_per_page' => '40',
+                        'posts_per_page' => '-1',
                         'showposts' => '40'
                         );
                         $my_query = new WP_Query($args); 
@@ -62,13 +64,16 @@
                         <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
                         <?php if(!empty($url)){ ?>
                         <div class="col-xs-12 col-sm-4 col-md-2">
-                            <?php  if ( has_post_thumbnail() ) { the_post_thumbnail('medium', array('class' => 'img-responsive')); }?>  
+                            <a href="#demo-<?php the_id(); ?>">
+                                <?php  if ( has_post_thumbnail() ) { the_post_thumbnail('medium', array('class' => 'img-responsive')); }?> 
+                            </a>
+                             
                         </div>
                         <?php } ?>
                     <?php $i++;endwhile; endif; ?>
                 </div>
-            </div>
                 
+            
             <!-- Controls -->
             <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>

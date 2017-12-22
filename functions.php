@@ -4,7 +4,8 @@ function clinica_styles(){
 	wp_enqueue_style('normalize', get_stylesheet_directory_uri() . '/css/normalize.css');
   wp_enqueue_style('bootstrap', "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
 	//wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
-  wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/css/font-awesome.css'); 
+  wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/css/font-awesome.css');
+  wp_enqueue_style('camera', get_stylesheet_directory_uri() . '/css/camera.css');
 	wp_enqueue_style('style', get_stylesheet_uri()); //usa el style.css, debe ser la ultima hoja de estilos
 
   wp_enqueue_script('jquery');
@@ -22,9 +23,13 @@ function incrustar_js(){
          get_template_directory_uri() . '/js/navbar.js',
          array('jquery'),
          '1.0' );
+     wp_register_script('camera',
+         get_template_directory_uri() . '/js/camera.js',
+         array('jquery'),
+         '1.0' );
      // pone en cola es script
+     wp_enqueue_script('camera');
      wp_enqueue_script('navbarjs');
-     wp_enqueue_script('map.js');
   }
 }
 

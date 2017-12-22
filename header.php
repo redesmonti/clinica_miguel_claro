@@ -17,7 +17,7 @@
 	        <div class="container">
 	          <div class="navbar-header"> 
 	            <div class="navbar-brand">
-	              <a href="#">Project name</a><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="">
+	              <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_miguelclarohd.png" alt="">
 	            </div> 
 	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> 
 	              <span class="sr-only">Toggle navigation</span> 
