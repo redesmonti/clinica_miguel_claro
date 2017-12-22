@@ -1,0 +1,471 @@
+/*
+Theme Name: Monti Clinica
+Theme URI: https://wordpress.org/themes/monti/
+Author: Michelle Navia
+Author URI: https://wordpress.org/
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: monti
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+body {
+    background-color: #f1f1f1;
+}
+
+/* menu */
+.contenedo-contacto{
+    background: #2a3073;
+    width: 100%;
+    color: #fff;
+    text-align: right;
+    padding-right: 10%;
+}
+.navbar-inverse{
+    background:#fff;
+    border: 0px;
+    box-shadow: 1px 1px 11px 1px #0000002e;
+}
+
+/*--------------------------------------------------------------
+# Navegacion (navbar)
+--------------------------------------------------------------*/
+
+nav.navegacion {
+	top: 0;
+  	left: 0;
+  	right: 0;
+  	z-index: 10;
+  	background: #fff;
+}
+nav.navegacion ul{
+	margin-top: 12px;
+}
+nav.navegacion ul li{
+	/*para los dispositivos moviles*/
+	text-align: center;
+	margin-right: 10px;
+}
+nav.navegacion ul li a {
+	/* para los enlaces*/
+	color: #2a3073;
+	padding: 13px;
+	
+}
+nav.navegacion ul li a:hover {
+	background: transparent;
+}
+
+#navbarjs{
+	position:fixed;
+}
+
+/*togglenavigation*/
+.navbar .navbar-header,
+.navbar-collapse {
+    float:none;
+    vertical-align: top;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 26px;
+  height: 4px;
+  background-color: #2a3073;
+  border-radius: 1px;
+}
+
+/*codigo para ajustar logo en navbar*/
+.navbar-brand {
+	/*padding 8px ajusta bien para todos los dispositivos*/
+  	padding: 8px;
+}
+.navbar-brand>img {
+	  height: 100%;
+	  padding: 1px;
+	  width: auto;
+}
+
+/* para dispositivos moviles*/
+@media (min-width: 780px){
+	
+	nav.navegacion ul li{
+		margin-left: auto;
+    	margin-right:auto;
+
+	}
+	nav.navegacion{
+		padding: 1px 0;
+		width: 100%;
+		position:absolute;
+		display: block;
+	}
+}
+
+/* Contenedor botonera */
+.contenedor-cuadros-especialidades {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: 8;
+    position: relative;
+    margin-top: -57px;
+}
+.contenedor-cuadros-especialidades .cuadro {
+    width: 200px;
+    height: 150px;
+}
+.contenedor-cuadros-especialidades h1 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin-top: 34%;
+}
+.contenedor-cuadros-especialidades .azul1{
+    background: #2a3073;
+}
+.contenedor-cuadros-especialidades .azul2{
+    background: #373e8a;
+}
+.contenedor-cuadros-especialidades .azul3{
+    background: #35478c;
+}
+.contenedor-cuadros-especialidades .azul4{
+    background: #4a5eac;
+}
+.contenedor-cuadros-especialidades .azul5{
+    background: #4e7ac7;
+}
+.contenedor-cuadros-especialidades .azul6{
+    background: #6895e4;
+}
+.hover-azul:hover{
+    background: #030658;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+.hover-azul{
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+/* Contenedor "Sobre la Clínica" */
+.contenedor-clinica{
+    margin: auto;
+    margin-bottom: 40px;
+}
+.contenedor-info-clinica {
+    display: flex;
+    flex-wrap: wrap;
+    width: 92%;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: center;
+}
+.contenedor-clinica .titulo h1 {
+    color: #011342;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 43px;
+}
+.contenedor-clinica .titulo p{
+    width: 40%;
+    font-size: 12px;
+    margin: auto;
+    color: #8D8D8D;
+}
+.contenedor-clinica .titulo{
+    margin: auto;
+    text-align: center; 
+}
+.contenedor-info-clinica .bloque-texto1 {
+    width: 327px;
+    text-align: center;
+    padding-top: 16px;  
+}
+.contenedor-info-clinica .bloque-texto1 h2, .contenedor-info-clinica .bloque-texto2 h2{
+    color: #99160e;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 48px;
+}
+.contenedor-info-clinica .bloque-texto1 p, .contenedor-info-clinica .bloque-texto2 p {
+    text-align: justify;
+    color: #8D8D8D;
+    font-size: 14px;
+    margin-bottom: 37px;
+    padding: 0px 37px;
+}
+.contenedor-info-clinica .foto1 {
+    background-image: url(../img/foto2.png);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 321px;
+    height: 214px;
+}
+.contenedor-info-clinica .foto2 {
+    background-image: url(../img/foto2.png);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 321px;
+    height: 214px;
+}
+.contenedor-info-clinica .foto3 {
+    background-image: url(../img/foto2.png);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 321px;
+    height: 214px;
+}
+
+/* Contenedor video */
+.contenedor-video{
+    background-image: url(http://localhost/clinica_mc/wp-content/uploads/2017/12/fondo-video.png);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.contenedor-video .contenedor-titulos h1{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 28px;
+    padding-top: 43px;
+}
+.contenedor-video .contenedor-titulos p{
+    width: 40%;
+    font-size: 12px;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+}
+.contenedor-video .contenedor-infovideo{
+    color: #fff;
+    margin: auto;
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+}
+.contenedor-video .contenedor-infovideo .texto, .contenedor-video .contenedor-infovideo .video{
+    width: 500px;
+    margin: auto;
+}
+.contenedor-video .contenedor-infovideo .video img {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 117px;
+}
+
+/* Contenedor especialistas con carousel */
+.contenedor-especialistas {
+    padding-bottom: 3%;
+}
+.contenedor-especialistas .titulo h1{
+    text-align: center;
+    color: #99160e;
+    font-weight: bold;
+    font-size: 28px;
+    padding-top: 43px;
+}
+.contenedor-especialistas .titulo p{
+    width: 40%;
+    font-size: 12px;
+    margin: auto;
+    color: #8D8D8D;
+    text-align: center;
+}
+.contenedor-info-especialistas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 40px;
+    width: 70%;
+    background: #f3f3f3;
+    box-shadow: 1px 1px 1px #0000002b;
+}
+.contenedor-info-especialistas .foto{
+    width: 40%;
+}
+.contenedor-info-especialistas .foto img{
+    width: 100%;
+}
+.contenedor-info-especialistas .info {
+    width: 400px;
+    margin: auto;
+}
+.contenedor-carousel{
+    width: 70%;
+    margin: auto;
+}
+
+/* Contenedor Noticias */
+.contenedor-noticias{
+    background-image: url(http://localhost/clinica_mc/wp-content/uploads/2017/12/fondo-noticias.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 5%;
+}
+.contenedor-noticias .titulo h1 {
+    text-align: center;
+    color: #011342;
+    font-weight: bold;
+    font-size: 28px;
+    padding-top: 43px;
+}
+.contenedor-noticias .titulo p {
+    width: 40%;
+    font-size: 12px;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+}
+.contenedor-link-noticias {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 56px;
+    flex-wrap: wrap;
+}
+.tarjeta {
+    background: #fff;
+    width: 240px;
+    margin: auto;
+    padding-bottom: 4%;
+    text-align: center;
+    margin-top: 15px;
+}
+.tarjeta .imagen {
+    width: 240px;
+    height: 150px;
+    overflow: hidden;
+}
+.tarjeta .descripcion {
+    width: 190px;
+    font-size: 12px;
+    color: #a2a2a2;
+    text-align: justify;
+    margin: auto;
+    height: 100px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 17px;
+}
+.tarjeta h3{
+    text-align: center;
+    color:#99160e;
+    font-size: 18px;
+    font-weight: bold;
+}
+.tarjeta a {
+    background: #213f8c;
+    color: #fff;
+    padding: 4px 67px;
+    transition: 0.5s ease;
+}
+.tarjeta a:hover{
+    text-decoration: none;
+    background: #2D4FA7;
+    transition: 0.5s ease;
+}
+
+
+/* Contenedor contacto */
+.contenedor-contacto .titulo h1 {
+    color: #011342;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 43px;
+    text-align: center;
+}
+.contenedor-contacto .titulo p {
+    width: 40%;
+    font-size: 12px;
+    margin: auto;
+    color: #8D8D8D;
+    text-align: center;
+}
+.contenedor-mapa-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+}
+.formulario{
+    width: 300px;
+    height:450px;
+    background: #011342;
+    color: #fff;
+    padding:50px 40px;
+}
+.formulario input{
+    margin-bottom: 15px;
+    border-radius: 0px;
+}
+.formulario textarea{
+    border-radius: 0px;
+}
+.map{
+    width: 60%;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 100;
+}
+
+
+/*------------- Responsivo celular -------------*/
+@media (max-width: 780px) {
+    /*--------------------------- especialidades botones ---------------------------*/
+    .contenedor-cuadros-especialidades {
+        margin-top: 0px;
+    }
+    .contenedor-cuadros-especialidades .cuadro {
+        width: 100%;
+        height: 50px;
+    }
+    .contenedor-cuadros-especialidades h1 {
+        font-size: 19px;
+        margin-top: 4%;
+    }
+    /*--------------------------- contenedor sobre la clìnica ---------------------------*/
+    .contenedor-info-clinica {
+        width: 100%;
+    }
+    .contenedor-clinica .titulo p {
+        width: 90%;
+        font-size: 16px;
+    }
+    .contenedor-info-clinica .bloque-texto1 {
+        padding-top: 0px;
+    }
+    /*--------------------------- area video ---------------------------*/
+    .contenedor-video .contenedor-titulos p {
+        width: 90%;
+        font-size: 16px;
+    }
+    .contenedor-video .contenedor-infovideo .texto p{
+        width: 100%;
+
+    }
+  }
