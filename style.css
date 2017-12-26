@@ -34,7 +34,36 @@ body {
     border: 0px;
     box-shadow: 1px 1px 11px 1px #0000002e;
 }
+.link-toma-horas {
+background: rgba(78,122,199,1);
+background: -moz-linear-gradient(left, rgba(78,122,199,1) 0%, rgba(4,165,234,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(78,122,199,1)), color-stop(100%, rgba(4,165,234,1)));
+background: -webkit-linear-gradient(left, rgba(78,122,199,1) 0%, rgba(4,165,234,1) 100%);
+background: -o-linear-gradient(left, rgba(78,122,199,1) 0%, rgba(4,165,234,1) 100%);
+background: -ms-linear-gradient(left, rgba(78,122,199,1) 0%, rgba(4,165,234,1) 100%);
+background: linear-gradient(to right, rgba(78,122,199,1) 0%, rgba(4,165,234,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e7ac7', endColorstr='#04a5ea', GradientType=1 );
+    position: fixed;
+    right: 0;
+    top: 21px;
+    text-align: center;
+    width: 247px;
+    height: 80px;
+    border-radius: 0px 0px 0px 10px;
+    padding-top: 2%;
+    border-left: 19px solid #eeeeee;
+    z-index: 99;
+}
+.link-toma-horas a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
 
+.collapse.navbar-collapse.navbar-right.navbar-ex1-collapse {
+    margin-right: 13%;
+}
 /*--------------------------------------------------------------
 # Navegacion (navbar)
 --------------------------------------------------------------*/
@@ -138,19 +167,20 @@ nav.navegacion ul li a:hover {
     flex-wrap: wrap;
     z-index: 8;
     position: relative;
-    margin-top: -57px;
+    margin-top: -33px;
 }
 .contenedor-cuadros-especialidades .cuadro {
-    width: 200px;
-    height: 150px;
+    width: 160px;
+    height: 80px;
     cursor: pointer;
 }
 .contenedor-cuadros-especialidades h1 {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: bold;
     text-align: center;
     color: #fff;
-    margin-top: 34%;
+    margin-top: 20%;
+    line-height: 15px;
 }
 .contenedor-cuadros-especialidades .azul1{
     background: #2a3073;
@@ -436,12 +466,12 @@ nav.navegacion ul li a:hover {
     justify-content: center;
     margin-top: 25px;
 }
-.formulario{
+.formulario {
     width: 300px;
-    height:450px;
+    height: 496px;
     background: #011342;
     color: #fff;
-    padding:50px 40px;
+    padding: 50px 40px;
 }
 .formulario input{
     margin-bottom: 15px;
@@ -459,8 +489,67 @@ label {
     margin-bottom: 5px;
     font-weight: 100;
 }
+.pestanas-mapas .nav-tabs.nav-justified>li>a {
+    border-bottom: 0px solid #ddd;
+    border-radius: 0px;
+}
+.pestanas-mapas .linea1, .pestanas-mapas .linea1 a:hover{
+    background: #ee1c25!important;
+    color: #fff;
+    transition: 0.5s all ease;
 
-
+}
+.pestanas-mapas .linea1 a{
+    color: #fff;
+}
+.pestanas-mapas .linea1 a:focus, .pestanas-mapas .linea1 a:active, .pestanas-mapas .linea1:active{
+    background: #011342;
+    border:none;
+    transition: 0.5s all ease;
+}
+.pestanas-mapas .linea5, .pestanas-mapas .linea5 a:hover{
+        background:#059341;
+        color: #fff;
+        transition: 0.5s all ease;
+}
+.pestanas-mapas .linea5 a{
+    color: #fff;
+}
+.pestanas-mapas .linea5 a:focus, .pestanas-mapas .linea5 a:active, .pestanas-mapas .linea5:active{
+    background: #011342;
+    border:none;
+    transition: 0.5s all ease;
+}
+.pestanas-mapas .linea6, .pestanas-mapas .linea6 a:hover{
+        background:#a35db5;
+        color: #fff;
+        transition: 0.5s all ease;
+}
+.pestanas-mapas .linea6 a{
+    color: #fff;
+}
+.pestanas-mapas .linea6 a:focus, .pestanas-mapas .linea6 a:active, .pestanas-mapas .linea6:active{
+    background: #011342;
+    border:none;
+    transition: 0.5s all ease;
+} 
+.pestanas-mapas .mapa-general, .pestanas-mapas .mapa-general a:hover{
+        background:#0531a5;
+        color: #fff;
+        transition: 0.5s all ease;
+}
+.pestanas-mapas .mapa-general a{
+    color: #fff;
+}
+.pestanas-mapas .mapa-general a:focus, .pestanas-mapas .mapa-general a:active, .pestanas-mapas .mapa-general:active{
+    background: #011342;
+    border:none;
+    transition: 0.5s all ease;
+}   
+.pestanas-mapas li a img {
+    width: 26px;
+    margin-right: 5px;
+}
 /*------------- Responsivo celular -------------*/
 @media (max-width: 780px) {
     /*--------------------------- especialidades botones ---------------------------*/

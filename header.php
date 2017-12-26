@@ -34,7 +34,8 @@
 	              'container_id' => 'navbar',
 	              'container_class' => 'collapse navbar-collapse', 
 	              'menu_class' => 'nav navbar-nav navbar-left',
-	              'walker' => new WP_Bootstrap_Navwalker() ) ); ?>    
+	              'walker' => new WP_Bootstrap_Navwalker() ) ); ?>
+
 	          </div>
 	        </div>        
 	    </nav><!-- fin navegacion-->
