@@ -4,3 +4,9 @@ $(document).ready(function(ev){
         $(this).parent('li').addClass('active');
     });
 });
+$(document).ready(function() {
+  $('#media').carousel({
+    pause: true,
+    interval: false,
+  });
+});
