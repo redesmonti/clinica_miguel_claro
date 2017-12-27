@@ -2,7 +2,7 @@
 
 <!-- Primer slider -->
     <div class="link-toma-horas">
-    <a href="#">Toma de horas aquí</a>
+    <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>Toma de horas aquí</a>
     </div>
 
     <div class="slider-principal">

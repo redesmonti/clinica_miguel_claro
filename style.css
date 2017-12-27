@@ -35,14 +35,14 @@ body {
     box-shadow: 1px 1px 11px 1px #0000002e;
 }
 .link-toma-horas {
-background: rgba(78,122,199,1);
-background: -moz-linear-gradient(left, rgba(78,122,199,1) 0%, rgba(4,165,234,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(78,122,199,1)), color-stop(100%, rgba(4,165,234,1)));
-background: -webkit-linear-gradient(left, rgba(78,122,199,1) 0%, rgba(4,165,234,1) 100%);
-background: -o-linear-gradient(left, rgba(78,122,199,1) 0%, rgba(4,165,234,1) 100%);
-background: -ms-linear-gradient(left, rgba(78,122,199,1) 0%, rgba(4,165,234,1) 100%);
-background: linear-gradient(to right, rgba(78,122,199,1) 0%, rgba(4,165,234,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e7ac7', endColorstr='#04a5ea', GradientType=1 );
+background: rgba(53,71,140,1);
+background: -moz-linear-gradient(left, rgba(53,71,140,1) 0%, rgba(78,122,199,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(53,71,140,1)), color-stop(100%, rgba(78,122,199,1)));
+background: -webkit-linear-gradient(left, rgba(53,71,140,1) 0%, rgba(78,122,199,1) 100%);
+background: -o-linear-gradient(left, rgba(53,71,140,1) 0%, rgba(78,122,199,1) 100%);
+background: -ms-linear-gradient(left, rgba(53,71,140,1) 0%, rgba(78,122,199,1) 100%);
+background: linear-gradient(to right, rgba(53,71,140,1) 0%, rgba(78,122,199,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35478c', endColorstr='#4e7ac7', GradientType=1 );
     position: fixed;
     right: 0;
     top: 21px;
@@ -50,17 +50,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e7ac7', end
     width: 247px;
     height: 80px;
     border-radius: 0px 0px 0px 10px;
-    padding-top: 2%;
+    padding-top: 1%;
     border-left: 19px solid #eeeeee;
     z-index: 99;
+    box-shadow: 0px -2px 7px 1px #00000091;
 }
 .link-toma-horas a {
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
 }
-
 .collapse.navbar-collapse.navbar-right.navbar-ex1-collapse {
     margin-right: 13%;
 }
@@ -93,10 +95,10 @@ nav.navegacion ul li a:hover {
 	background: transparent;
 }
 
-#navbarjs{
-	position:fixed;
+#navbarjs {
+    position: fixed;
+    box-shadow: 1px 1px 7px #00000045;
 }
-
 /*togglenavigation*/
 .navbar .navbar-header,
 .navbar-collapse {
@@ -286,7 +288,7 @@ nav.navegacion ul li a:hover {
 
 /* Contenedor video */
 .contenedor-video{
-    background-image: url(http://localhost/clinica_mc/wp-content/uploads/2017/12/fondo-video.png);
+    background-image: url(http://localhost/miguelclaro/wp-content/uploads/2017/12/fondo-video.png);
     background-size: 110%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -372,7 +374,7 @@ nav.navegacion ul li a:hover {
 
 /* Contenedor Noticias */
 .contenedor-noticias{
-    background-image: url(http://localhost/clinica_mc/wp-content/uploads/2017/12/fondo-noticias.png);
+    background-image: url(http://localhost/miguelclaro/wp-content/uploads/2017/12/fondo-noticias.png);
     background-repeat: no-repeat;
     background-size: 100%;
     padding-bottom: 5%;
@@ -550,19 +552,52 @@ label {
     width: 26px;
     margin-right: 5px;
 }
-/*------------- Responsivo celular -------------*/
+/*------------- Responsivo iPad horizontal-------------*/
+@media (max-width: 1024px) {
+    .collapse.navbar-collapse.navbar-right.navbar-ex1-collapse {
+        margin-right: 22%;
+    }
+    .carousel-caption {
+    padding-bottom: 99px;
+}
+.contenedor-video {
+    background-size: 138%;
+    background-position: bottom;
+}
+.contenedor-video .contenedor-infovideo {
+    width: 93%;
+}
+.contenedor-video .contenedor-infovideo .texto, .contenedor-video .contenedor-infovideo .video {
+    width: 430px;
+}
+.contenedor-video .contenedor-infovideo {
+    margin-top: 0px;
+
+}
+}
+
+/*------------- Responsivo iPad vertical-------------*/
 @media (max-width: 780px) {
+    .link-toma-horas {
+    top: 77px;
+    }
+    .collapse.navbar-collapse.navbar-right.navbar-ex1-collapse {
+    margin-right: -15px;
+}
     /*--------------------------- especialidades botones ---------------------------*/
     .contenedor-cuadros-especialidades {
         margin-top: 0px;
     }
+    .carousel-caption {
+    padding-bottom: 59px;
+    }
     .contenedor-cuadros-especialidades .cuadro {
-        width: 100%;
-        height: 50px;
+    width: 20%;
+    height: 82px;
     }
     .contenedor-cuadros-especialidades h1 {
-        font-size: 19px;
-        margin-top: 4%;
+        font-size: 20px;
+        margin-top: 20%;
     }
     /*--------------------------- contenedor sobre la clìnica ---------------------------*/
     .contenedor-info-clinica {
@@ -575,6 +610,19 @@ label {
     .contenedor-info-clinica .bloque-texto1 {
         padding-top: 0px;
     }
+    /*--------------------------- area especialistas ---------------------------*/
+    .contenedor-especialistas .titulo p {
+        width: 90%;
+        font-size: 16px;
+    }
+    .contenedor-video {
+        background-size: 273%;
+        background-position: center left;
+    }
+    .contenedor-video .contenedor-infovideo .texto, .contenedor-video .contenedor-infovideo .video {
+        width: 89%;
+        margin-top: 5%;
+    }
     /*--------------------------- area video ---------------------------*/
     .contenedor-video .contenedor-titulos p {
         width: 90%;
@@ -584,4 +632,36 @@ label {
         width: 100%;
 
     }
+
   }
+/*------------- Responsivo celulares -------------*/
+@media (max-width: 667px) {
+    .link-toma-horas {
+        top: 273px;
+    }
+      /*--------------------------- especialidades botones ---------------------------*/
+    .contenedor-cuadros-especialidades .cuadro {
+        width: 100%;
+        height: 49px;
+    }
+    .contenedor-cuadros-especialidades h1 {
+        font-size: 20px;
+        margin-top: 3%;
+    }
+.contenedor-video {
+    background-size: 115%;
+    background-position: center left;
+}
+}
+
+@media (max-width: 375px) {
+    .link-toma-horas {
+    top: 574px;
+    }
+    .slider-principal {
+    display: none;
+}
+.contenedor-video {
+    background-size: 361%;
+}
+}
