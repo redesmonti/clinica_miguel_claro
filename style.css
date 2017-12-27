@@ -63,6 +63,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35478c', end
     display: flex;
     flex-direction: column;
 }
+i.fa.fa-clock-o {
+    font-size: 33px;
+    margin-bottom: 2%;
+}
 .collapse.navbar-collapse.navbar-right.navbar-ex1-collapse {
     margin-right: 13%;
 }
@@ -635,7 +639,12 @@ label {
         width: 100%;
 
     }
-
+    .formulario {
+    width: 100%;
+}
+.map {
+    width: 100%;
+}
   }
 /*------------- Responsivo celulares -------------*/
 @media (max-width: 667px) {
