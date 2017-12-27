@@ -500,7 +500,7 @@ label {
     border-radius: 0px;
 }
 .pestanas-mapas .linea1, .pestanas-mapas .linea1 a:hover{
-    background: #ee1c25!important;
+    background: #ee1c25;
     color: #fff;
     transition: 0.5s all ease;
 
@@ -648,9 +648,15 @@ label {
   }
 /*------------- Responsivo celulares -------------*/
 @media (max-width: 667px) {
-    .link-toma-horas {
-        top: 273px;
-    }
+.link-toma-horas {
+    top: 76px;
+    width: 100%;
+    border-radius: 0px;
+    box-shadow: none;
+    position: fixed;
+    z-index: 9;
+    bottom: -26px;
+}
       /*--------------------------- especialidades botones ---------------------------*/
     .contenedor-cuadros-especialidades .cuadro {
         width: 100%;
@@ -667,9 +673,6 @@ label {
 }
 
 @media (max-width: 375px) {
-    .link-toma-horas {
-    top: 574px;
-    }
     .slider-principal {
     display: none;
 }
