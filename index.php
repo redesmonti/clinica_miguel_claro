@@ -1,6 +1,10 @@
 <?php get_header(); ?>
 
 <!-- Primer slider -->
+    <div class="link-toma-horas">
+    <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>Toma de horas aquí</a>
+    </div>
+
     <div class="slider-principal">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
@@ -47,7 +51,6 @@
       <div class="cuadro azul3 hover-azul"><h1>Centro de Curaciones</h1></div>
       <div class="cuadro azul4 hover-azul"><h1>Laboratorio</h1></div>
       <div class="cuadro azul5 hover-azul"><h1>Kinesiología</h1></div>
-      <div class="cuadro azul6 hover-azul"><h1>Hotelería</h1></div>
     </div>
 
 <!-- Contenedor "Sobre la Clínica" -->
