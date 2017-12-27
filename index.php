@@ -4,7 +4,10 @@
     <div class="link-toma-horas">
     <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>Toma de horas aquí</a>
     </div>
-
+    <div class="foto-reemplazo-celular">
+      <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/img/1.png" alt="">
+      <img class="img-celular-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_miguelclarohd.png" alt="">
+    </div>
     <div class="slider-principal">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->

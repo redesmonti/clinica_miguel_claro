@@ -146,7 +146,12 @@ nav.navegacion ul li a:hover {
 }
 
 /* Contenedor botonera */
-
+.foto-reemplazo-celular {
+    display: none;
+}
+img.img-celular-logo {
+display: none;
+}
 .carousel-caption {
     right: 20%;
     left: 20%;
@@ -655,7 +660,19 @@ label {
     box-shadow: none;
     position: fixed;
     z-index: 9;
-    bottom: -26px;
+    height: 45px;
+}
+.link-toma-horas a {
+    line-height: 36px;
+    flex-direction: row;
+}
+i.fa.fa-clock-o {
+    margin-bottom: 2%;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+.slider-principal {
+    margin-top: 101px;
 }
       /*--------------------------- especialidades botones ---------------------------*/
     .contenedor-cuadros-especialidades .cuadro {
@@ -678,5 +695,17 @@ label {
 }
 .contenedor-video {
     background-size: 361%;
+}
+.foto-reemplazo-celular {
+    margin-top: 101px;
+    display: block;
+}
+img.img-celular-logo {
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    top: 188px;
+    display: block;
+    left: 81px;
 }
 }
