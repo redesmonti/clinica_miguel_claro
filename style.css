@@ -560,6 +560,9 @@ label {
     .carousel-caption {
     padding-bottom: 99px;
 }
+.contenedor-info-clinica {
+    width: 96%;
+}
 .contenedor-video {
     background-size: 138%;
     background-position: bottom;
