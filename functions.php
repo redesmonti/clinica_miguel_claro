@@ -5,11 +5,10 @@ function clinica_styles(){
   wp_enqueue_style('bootstrap', "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
 	//wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
   wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/css/font-awesome.css');
-  wp_enqueue_style('slider', get_stylesheet_directory_uri() . '/css/slider.css');
 	wp_enqueue_style('style', get_stylesheet_uri()); //usa el style.css, debe ser la ultima hoja de estilos
-
   wp_enqueue_script('jquery');
   wp_enqueue_script('bootstrapjs', "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", array('jquery'), true);
+  wp_enqueue_style('slider', get_stylesheet_directory_uri() . '/css/slider.css');
 }
 add_action('wp_enqueue_scripts', 'clinica_styles'); //Hook para llamar al la funcion en wordpress
 
