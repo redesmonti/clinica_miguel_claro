@@ -297,7 +297,7 @@ display: none;
 
 /* Contenedor video */
 .contenedor-video{
-    background-image: url(http://localhost/miguelclaro/wp-content/uploads/2017/12/fondo-video.png);
+    background-image: url(http://pruebabrother.96.lt/wp-content/uploads/2017/12/fondo-video.png);
     background-size: 110%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -383,7 +383,7 @@ display: none;
 
 /* Contenedor Noticias */
 .contenedor-noticias{
-    background-image: url(http://localhost/miguelclaro/wp-content/uploads/2017/12/fondo-noticias.png);
+    background-image: url(http://pruebabrother.96.lt/wp-content/uploads/2017/12/fondo-noticias.png);
     background-repeat: no-repeat;
     background-size: 100%;
     padding-bottom: 5%;
@@ -491,7 +491,7 @@ display: none;
 .formulario textarea{
     border-radius: 0px;
 }
-.map{
+.map {
     width: 60%;
 }
 label {
@@ -544,6 +544,7 @@ label {
     border:none;
     transition: 0.5s all ease;
 } 
+
 .pestanas-mapas .mapa-general, .pestanas-mapas .mapa-general a:hover{
         background:#0531a5;
         color: #fff;
@@ -556,7 +557,20 @@ label {
     background: #011342;
     border:none;
     transition: 0.5s all ease;
-}   
+}  
+.pestanas-mapas .estacionamiento, .pestanas-mapas .estacionamiento a:hover{
+        background: #8c8c8c;
+        color: #fff;
+        transition: 0.5s all ease;
+}
+.pestanas-mapas .estacionamiento a{
+    color: #fff;
+}
+.pestanas-mapas .estacionamiento a:focus, .pestanas-mapas .estacionamiento a:active, .pestanas-mapas .estacionamiento:active{
+    background: #011342;
+    border:none;
+    transition: 0.5s all ease;
+}    
 .pestanas-mapas li a img {
     width: 26px;
     margin-right: 5px;
@@ -685,7 +699,31 @@ i.fa.fa-clock-o {
     }
 .contenedor-video {
     background-size: 115%;
-    background-position: center left;
+    background-position: top left;
+}
+.contenedor-noticias{
+    background-attachment: initial;
+}
+.contenedor-video{  
+    background-attachment: initial;
+}
+.contenedor-especialistas .titulo h1 {
+    padding-top: 0px;
+}
+.contenedor-video .contenedor-infovideo .video img {
+    padding-bottom: 60px;
+}
+.tarjeta {
+    width: 530px;
+}
+.tarjeta .imagen {
+    width: 530px;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    width: 100%;
+}
+.tarjeta .descripcion{
+    display: none;
 }
 }
 
@@ -707,5 +745,20 @@ img.img-celular-logo {
     top: 188px;
     display: block;
     left: 81px;
+}
+.tarjeta {
+    width: 330px;
+}
+.tarjeta .imagen {
+    width: 330px;
+}
+.tarjeta .descripcion {
+    width: 300px;
+}
+.tarjeta h3 {
+    height: 60px;
+}
+.tarjeta .descripcion{
+    display: none;
 }
 }
