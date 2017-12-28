@@ -17,28 +17,19 @@ body {
     position: relative;
     background:#ddd
 }
-
 #custom_carousel .controls li {
-  height: 213px;
-  margin: 0 7px;
-  width: 263px;
-  cursor: pointer;
+    display: table-cell;
+    width: 1%;
+    max-width:90px
 }
-#custom_carousel .controls li.active img {
-  background: rgba(0, 0, 0, 0.50);
-  height: 213px;
-  margin-top:;
-  position: absolute;
-  width: 100%
+#custom_carousel .controls li.active {
+    background-color:#eee;
+    border-top:3px solid orange;
 }
-#custom_carousel .controls a img {
+#custom_carousel .controls a small {
     overflow:hidden;
     display:block;
     font-size:10px;
     margin-top:5px;
     font-weight:bold
-}
-
-.img-slider-esp{
-    max-width:200px;
 }

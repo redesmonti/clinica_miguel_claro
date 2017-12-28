@@ -34,6 +34,7 @@
                 </div>
                   <?php } ?>
             <?php $i++;endwhile; endif; ?>
-    </div>        
-  </div>
+    </div>
+    <a href=" http://pruebabrother.96.lt/ver-noticias/" class="btn btn-primary" role="button" aria-pressed="true">Ver mas noticias</a>
+  </div>        
 </div>
