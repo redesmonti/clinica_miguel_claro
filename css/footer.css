@@ -3,13 +3,8 @@
 --------------------------------------------------------------*/
 
 #myFooter {
-    background-color: #3a3f46;
+    background-color: #011342;
     color: white;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
 }
 
 #myFooter .row {
@@ -61,7 +56,7 @@
 
 #myFooter .second-bar {
     text-align: center;
-    background-color: #33373e;
+    background-color: #011342;
     text-align: center;
 }
 

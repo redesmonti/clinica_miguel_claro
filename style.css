@@ -386,7 +386,7 @@ display: none;
     background-image: url(http://pruebabrother.96.lt/wp-content/uploads/2017/12/fondo-noticias.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
     background-attachment: fixed;
 }
 .contenedor-noticias .titulo h1 {
@@ -469,6 +469,8 @@ display: none;
     width: 100%; 
     color: #000000;
 }
+
+
 
 /* Contenedor contacto */
 .contenedor-contacto .titulo h1 {
@@ -589,6 +591,10 @@ label {
     width: 26px;
     margin-right: 5px;
 }
+.ver-mas-noticias {
+    margin: auto;
+    margin-top: 30px;
+}
 /*------------- Responsivo iPad horizontal-------------*/
 @media (max-width: 1024px) {
     .collapse.navbar-collapse.navbar-right.navbar-ex1-collapse {
@@ -603,6 +609,7 @@ label {
 .contenedor-video {
     background-size: 138%;
     background-position: bottom;
+    background-attachment: initial;
 }
 .contenedor-video .contenedor-infovideo {
     width: 93%;
@@ -612,13 +619,21 @@ label {
 }
 .contenedor-video .contenedor-infovideo {
     margin-top: 0px;
-
 }
-.contenedor-noticias{
-    background-attachment: initial;
+.contenedor-link-noticias {
+    width: 100%;
 }
-.contenedor-video{  
-    background-attachment: initial;
+.tarjeta {
+    width: 100%;
+}
+.tarjeta .imagen {
+    width: 100%;
+}
+.tarjeta h3 {
+    height: 58px;
+}
+.tarjeta .descripcion {
+    height: 55px;
 }
 }
 
@@ -678,20 +693,6 @@ label {
         width: 100%;
 
     }
-
-    .tarjeta {
-    background: #fff;
-    width: 100%;
-    margin: auto;
-    padding-bottom: 4%;
-    text-align: center;
-    margin-top: 15px;
-}
-.tarjeta .imagen {
-    width: 100%;
-    height: 150px;
-    overflow: hidden;
-}
     .formulario {
     width: 100%;
 }
@@ -734,6 +735,12 @@ i.fa.fa-clock-o {
 .contenedor-video {
     background-size: 115%;
     background-position: top left;
+}
+.contenedor-noticias{
+    background-attachment: initial;
+}
+.contenedor-video{  
+    background-attachment: initial;
 }
 .contenedor-especialistas .titulo h1 {
     padding-top: 0px;
@@ -789,6 +796,7 @@ img.img-celular-logo {
 .tarjeta .descripcion{
     display: none;
 }
+}
 
 /*--------------------------------------------------------------
 # paginas Index
@@ -798,20 +806,16 @@ img.img-celular-logo {
     margin-top: 60px;
 }
 
-
-
-
 /*--------------------------------------------------------------
-# pagina ver noticias
+# img footer
 --------------------------------------------------------------*/
-.contenedor-ver-noticias{
-    margin-top: 60px;
+
+img.img-footer {
+    margin-top: 40px;
 }
 
-/*--------------------------------------------------------------
-# pagina ver especialistas
---------------------------------------------------------------*/
-
-.contenedor-ver-especialistas{
-     margin-top: 60px;
+@media (max-width: 1024px) {
+    .img-footer{
+        margin-right: 10px;
+    }
 }
