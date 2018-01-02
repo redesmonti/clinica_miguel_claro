@@ -123,7 +123,7 @@ nav.navegacion ul li a:hover {
 	/*padding 8px ajusta bien para todos los dispositivos*/
   	padding: 8px;
 }
-.navbar-brand>img {
+.navbar-brand> a img {
 	  height: 100%;
 	  padding: 1px;
 	  width: auto;
