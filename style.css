@@ -806,6 +806,25 @@ img.img-celular-logo {
     margin-top: 60px;
 }
 
+.contenedor-entradas .titulo h1 {
+    color: #011342;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 43px;
+}
+
+.contenedor-entradas .titulo p{
+    width: 40%;
+    font-size: 12px;
+    margin: auto;
+    color: #8D8D8D;
+}
+.contenedor-entradas .titulo{
+    margin: auto;
+    text-align: center; 
+}
+
+
 /*--------------------------------------------------------------
 # img footer
 --------------------------------------------------------------*/
@@ -814,8 +833,3 @@ img.img-footer {
     margin-top: 40px;
 }
 
-@media (max-width: 1024px) {
-    .img-footer{
-        margin-right: 10px;
-    }
-}
