@@ -49,15 +49,15 @@
 
     <!-- Botonera especialidades -->
     <div class="contenedor-cuadros-especialidades">
-      <div class="cuadro azul1 hover-azul"><h1>Cirugía Vascular</h1></div>
-      <div class="cuadro azul2 hover-azul"><h1>Traumatología</h1></div>
-      <div class="cuadro azul3 hover-azul"><h1>Centro de Curaciones</h1></div>
-      <div class="cuadro azul4 hover-azul"><h1>Laboratorio</h1></div>
-      <div class="cuadro azul5 hover-azul"><h1>Kinesiología</h1></div>
+      <div class="cuadro azul1 hover-azul"><a href="http://pruebabrother.96.lt/cirugia-vascular/"><h1>Cirugía Vascular</h1></a></div>
+      <div class="cuadro azul2 hover-azul"><a href=""></a><h1>Traumatología</h1></div>
+      <div class="cuadro azul3 hover-azul"><a href=""></a><h1>Centro de Curaciones</h1></div>
+      <div class="cuadro azul4 hover-azul"><a href=""></a><h1>Laboratorio</h1></div>
+      <div class="cuadro azul5 hover-azul"><a href=""></a><h1>Kinesiología</h1></div>
     </div>
 
 <!-- Contenedor "Sobre la Clínica" -->
-<section id="somos">
+<section id="somos" class="smooth-scroll">
     <div class="contenedor-clinica">
       <div class="titulo">
           <h1>Sobre la Clínica Miguel Claro</h1>
@@ -113,15 +113,15 @@
     </div>
 
   <!-- Especialistas  -->
-	<section id="especialistas">
+	<section id="especialistas" class="smooth-scroll">
 		<?php include_once( 'especialistas.php' ); ?>	
 	</section>
 
   <!-- Noticias  -->
-  <section id="noticias">
+  <section id="noticias" class="smooth-scroll">
      <?php include_once( 'noticias.php' ); ?>
   </section>
-<section id="contacto">
+<section id="contacto" class="smooth-scroll">
      <?php include_once( 'contacto.php' ); ?>
   </section>
 <?php get_footer(); ?>

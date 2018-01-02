@@ -799,31 +799,49 @@ img.img-celular-logo {
 }
 
 /*--------------------------------------------------------------
-# paginas Index
+# Index
 --------------------------------------------------------------*/
 
 .contenedor-entradas{
     margin-top: 60px;
 }
 
-.contenedor-entradas .titulo h1 {
+.contenedor-entradas .titulo h1{
     color: #011342;
     font-weight: bold;
     font-size: 28px;
-    margin-top: 43px;
+    padding-top: 43px;
 }
 
 .contenedor-entradas .titulo p{
     width: 40%;
     font-size: 12px;
-    margin: auto;
     color: #8D8D8D;
 }
 .contenedor-entradas .titulo{
     margin: auto;
-    text-align: center; 
 }
 
+
+/*--------------------------------------------------------------
+# Especialidades
+--------------------------------------------------------------*/
+
+.contenedor-especialidades{
+     margin-top: 110px;
+}
+
+.contenedor-especialidades .titulo h1{
+    font-size: 34px;
+    color: #011342;
+    font-weight: bold;
+}
+
+.contenedor-especialidades .texto p{
+    font-size: 16px;
+    margin: auto;
+    color: #8D8D8D;
+}
 
 /*--------------------------------------------------------------
 # img footer

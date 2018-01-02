@@ -8,6 +8,7 @@ function clinica_styles(){
   wp_enqueue_script('jquery');
   wp_enqueue_script('bootstrapjs', "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", array('jquery'), true);
   wp_enqueue_style('slider', get_stylesheet_directory_uri() . '/css/slider.css');
+  wp_enqueue_style('footer', get_stylesheet_directory_uri() . '/css/footer.css');
   wp_enqueue_style('style', get_stylesheet_uri()); //usa el style.css, debe ser la ultima hoja de estilos
 }
 add_action('wp_enqueue_scripts', 'clinica_styles'); //Hook para llamar al la funcion en wordpress
@@ -22,11 +23,16 @@ function incrustar_js(){
          get_template_directory_uri() . '/js/navbar.js',
          array('jquery'),
          '1.0' );
+     wp_register_script('smoothscroll',
+         get_template_directory_uri() . '/js/smoothscroll.js',
+         array('jquery'),
+         '1.0' );
      wp_register_script('slider',
          get_template_directory_uri() . '/js/slider.js',
          array('jquery'),
          '1.0' );
      // pone en cola es script
+     wp_enqueue_script('smoothscroll');
      wp_enqueue_script('slider');
      wp_enqueue_script('navbarjs');
   }
