@@ -10,7 +10,6 @@
 	                    <ul>
 	                        <li>Miguel Claro 988 - Providencia -Santiago</li>
 	                        <li>Fono: (56 2) 27140600</li>
-	                        <li>Contamos con estacionamientos gratuitos</li>
 	                    </ul>
 	                </div>
 	            </div>

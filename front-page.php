@@ -50,10 +50,10 @@
     <!-- Botonera especialidades -->
     <div class="contenedor-cuadros-especialidades">
       <div class="cuadro azul1 hover-azul"><a href="http://pruebabrother.96.lt/cirugia-vascular/"><h1>Cirugía Vascular</h1></a></div>
-      <div class="cuadro azul2 hover-azul"><a href=""></a><h1>Traumatología</h1></div>
-      <div class="cuadro azul3 hover-azul"><a href=""></a><h1>Centro de Curaciones</h1></div>
-      <div class="cuadro azul4 hover-azul"><a href=""></a><h1>Laboratorio</h1></div>
-      <div class="cuadro azul5 hover-azul"><a href=""></a><h1>Kinesiología</h1></div>
+      <div class="cuadro azul2 hover-azul"><a href="http://pruebabrother.96.lt/traumatologia"><h1>Traumatología</h1></a></div>
+      <div class="cuadro azul3 hover-azul"><a href="http://pruebabrother.96.lt/centro-de-curaciones/"><h1>Centro de Curaciones</h1></a></div>
+      <div class="cuadro azul4 hover-azul"><a href="http://pruebabrother.96.lt/laboratorio/"><h1>Laboratorio</h1></a></div>
+      <div class="cuadro azul5 hover-azul"><a href="http://pruebabrother.96.lt/kinesiologia/"><h1>Kinesiología</h1></a></div>
     </div>
 
 <!-- Contenedor "Sobre la Clínica" -->
