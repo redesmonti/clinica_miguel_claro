@@ -11,6 +11,9 @@ Template Name: Especialidades
 		<div class="titulo">
 			<h1><?php the_title(); ?></h1>
 		</div>
+		<div>
+			<?php  if ( has_post_thumbnail() ) { the_post_thumbnail('medium', array('class' => 'img-responsive')); }?>
+		</div>
 		<div class="texto">
 			<p>
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
