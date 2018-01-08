@@ -38,6 +38,30 @@ function incrustar_js(){
   }
 }
 
+/* Mail */
+add_filter('wp_mail_content_type','set_content_type');
+function set_content_type(){
+
+    // If there is a $_POST['email']...
+    if( isset($_POST['email']) && ($_POST['validation'] == true ) ) {
+
+        $email = $_POST['email'];       
+        $email_to = "redes.monti@gmail.com";
+        $fullname = $_POST['fullname'];
+        $headers = 'From: '. $fullname .' <'. $email .'>' . "\r\n";
+        $email_subject = "example intro: $email";
+        $message = $_POST['text']; 
+
+        if(wp_mail($email_subject,$message,$headers)) {
+            echo json_encode(array("result"=>"complete"));
+        } else {
+            echo json_encode(array("result"=>"mail_error"));
+            var_dump($GLOBALS['phpmailer']->ErrorInfo);
+    }
+        wp_die();
+    }
+}
+
 
 /*Menus*/
 
@@ -52,6 +76,27 @@ function mis_menus() {
 }
 add_action( 'after_setup_theme', 'mis_menus' );
 
+/**
+ * Crear una zonan de widgets que podremos gestionar
+ * fácilmente desde administrador de Wordpress.
+ */
+
+function mis_widgets(){
+ register_sidebar(
+   array(
+       'name'          => __( 'Sidebar' ),
+       'id'            => 'sidebar',
+       'description'   => 'Widget para las paginas interiores',
+       'before_widget' => '<div id="%1$s" class="widget">',
+       'after_widget'  => '</div>',
+       'before_title'  => '<h3 class="widget-tittle">',
+       'after_title'   => '</h3>',
+   )
+ );
+}
+add_action('init','mis_widgets');
+
+
 /*le da el nacho y alto a las imagenes de las noticias*/
 add_image_size('noticias', 750, 490, true);
 
@@ -59,6 +104,7 @@ add_image_size('noticias', 750, 490, true);
 add_theme_support( 'post-thumbnails' );
 
 /*Especialistas*/
+
   $labels = array(
   'name' => _x( 'Especialistas', 'post type general name' ),
         'singular_name' => _x( 'Especialistas', 'post type singular name' ),
@@ -83,10 +129,18 @@ add_theme_support( 'post-thumbnails' );
         'capability_type' => 'post',
         'hierarchical' => false,
         'menu_position' => null,
-        'taxonomies' => array('category'),
+        'taxonomies' => array('category', 'post_tag'),
         'supports' => array( 'title', 'thumbnail','excerpt', 'custom-fields', 'editor' )
     );
     
     register_post_type( 'Especialistas', $args ); /* Registramos y a funcionar */
+ 
+function add_taxonomies() {
+  //Replace post_type with actual CPT slug
+  register_taxonomy_for_object_type( 'category', 'Especialistas' ); 
+  register_taxonomy_for_object_type( 'post_tag', 'Especialistas' );
+}
+add_action( 'init', 'add_taxonomies' );
+
 
 ?>

@@ -12,21 +12,23 @@
 	<header class="site-header">
 	    <nav class="navegacion navbar-fixed-top" id="navbarjs" role="navigation">
 	    	<div class="contenedo-contacto">
-	          <a href="">(56 2) 27140600</a>
+	          <a href="tel:56227140600">(56 2) 27140600</a>
 	      	</div>
 	        <div class="container">
 	          <div class="navbar-header"> 
 	            <div class="navbar-brand">
-	              <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_miguelclarohd.png" alt="">
+	              <a href="http://pruebabrother.96.lt">
+	              	<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_miguelclarohd.png" alt="">
+	              </a>  
 	            </div> 
-	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> 
+	            <button type="button" class="navbar-toggle smooth-scroll" data-toggle="collapse" data-target=".navbar-ex1-collapse"> 
 	              <span class="sr-only">Toggle navigation</span> 
 	              <span class="icon-bar"></span> 
 	              <span class="icon-bar"></span> 
 	              <span class="icon-bar"></span> 
 	            </button>  
 	          </div>
-	          <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+	          <div class="smooth-scroll collapse navbar-collapse navbar-right navbar-ex1-collapse">
 	            <?php wp_nav_menu( array( 
 	              'theme_location' => 'navegation',
 	              'depth' => 2,

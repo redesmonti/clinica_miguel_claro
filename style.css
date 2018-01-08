@@ -88,17 +88,24 @@ nav.navegacion ul li{
 	/*para los dispositivos moviles*/
 	text-align: center;
 	margin-right: 10px;
+
 }
 nav.navegacion ul li a {
 	/* para los enlaces*/
 	color: #2a3073;
 	padding: 13px;
-	
+    padding-bottom: 3px;
+    border-bottom: 10px solid #fff;
+    transition: 0.3s ease;	
 }
-nav.navegacion ul li a:hover {
+nav.navegacion ul li a:hover, nav.navegacion ul li a:active,  nav.navegacion ul li a:focus{
 	background: transparent;
+        border-bottom: 10px solid #ce2930;
+    transition: 0.3s ease;
 }
+nav.navegacion ul li:hover, nav.navegacion ul li:active {
 
+}
 #navbarjs {
     position: fixed;
     box-shadow: 1px 1px 7px #00000045;
@@ -295,6 +302,11 @@ display: none;
     height: 214px;
 }
 
+a.btn.btn-primary {
+    margin: auto;
+    margin-top: 9px;
+}
+
 /* Contenedor video */
 .contenedor-video{
     background-image: url(http://pruebabrother.96.lt/wp-content/uploads/2017/12/fondo-video.png);
@@ -360,8 +372,18 @@ display: none;
     margin: auto;
     margin-top: 40px;
     width: 70%;
-    background: #f3f3f3;
+    background: #fff;
     box-shadow: 1px 1px 1px #0000002b;
+}
+
+.contenedor-link-especialistas {
+    width: 58%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 56px;
+    flex-wrap: wrap;
+    background: #f1f1f1;
 }
 .contenedor-info-especialistas .foto{
     width: 40%;
@@ -379,6 +401,11 @@ display: none;
 }
 .info-especialista {
     margin: auto;
+}
+
+a.btn.btn-primary {
+    margin: auto;
+    margin-top: 9px;
 }
 
 /* Contenedor Noticias */
@@ -699,6 +726,21 @@ label {
 .map {
     width: 100%;
 }
+
+
+    .widget {
+        background: #260d54;
+        padding: 2% 4% 2% 4%;
+        color: #fff;
+        position: initial!important;
+    }
+    .tarjeta .descripcion {
+    width: 283px;
+
+}
+.tarjeta .imagen {
+    width: 100%;
+}
   }
 /*------------- Responsivo celulares -------------*/
 @media (max-width: 667px) {
@@ -760,7 +802,112 @@ i.fa.fa-clock-o {
 .tarjeta .descripcion{
     display: none;
 }
+
+img.img-footer {
+    margin-top: 40px;
+    width: 52%;
 }
+}
+
+
+
+/*--------------------------------------------------------------
+# Index
+--------------------------------------------------------------*/
+.fondo-blanco{
+    background: #fff;
+    padding: 5%;
+    margin-bottom: 5%;    
+}
+.contenedor-entradas {
+    margin-top: 110px;
+
+}
+.contenedor-entradas .space {
+    margin-bottom: 40px;
+    display: flex;
+    background: #fff;
+    padding: 1%;
+}
+.info-espacio {
+    margin-left: 5%;
+    width: 50%;
+}
+.contenedor-entradas .info-espacio h1{
+    color: #011342;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.contenedor-entradas .titulo p{
+    font-size: 16px;
+    color: #8D8D8D;
+    margin-top: 25px;
+}
+.contenedor-entradas .descripcion{
+    margin-top: 25px;
+    margin: auto;
+}
+
+
+/*--------------------------------------------------------------
+# Especialidades
+--------------------------------------------------------------*/
+
+.contenedor-especialidades {
+    margin-top: 110px;
+}
+
+.contenedor-especialidades .titulo h1{
+    font-size: 34px;
+    color: #011342;
+    font-weight: bold;
+}
+
+.contenedor-especialidades .imagen img{
+
+}
+
+.contenedor-especialidades .texto p{
+    font-size: 16px;
+    margin: auto;
+    color: #8D8D8D;
+    margin-bottom: 20px;
+}
+
+.contenedor-entradas .titulo-especialistas{
+    color: #011342;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 43px;
+    margin-bottom: 20px;
+}
+/*--------------------------------------------------------------
+# img footer
+--------------------------------------------------------------*/
+
+img.img-footer {
+    margin-top: 40px;
+    width: 80%;
+}
+
+
+/*--------------------------------------------------------------
+# widget
+--------------------------------------------------------------*/
+
+.widget {
+    background: #011342;
+    padding: 2% 4% 2% 4%;
+    color: #fff;
+    position: fixed;
+}
+.widget ul li a {
+    color: #fff;
+}
+
+
+
 
 @media (max-width: 375px) {
     .slider-principal {
@@ -796,63 +943,46 @@ img.img-celular-logo {
 .tarjeta .descripcion{
     display: none;
 }
+.contenedor-entradas .space {
+    display: block;
 }
-
-/*--------------------------------------------------------------
-# Index
---------------------------------------------------------------*/
-
-.contenedor-entradas{
-    margin-top: 60px;
+.info-espacio {
+    margin-left: 0%;
+    width: 100%;
 }
-
-.contenedor-entradas .titulo h1{
-    color: #011342;
-    font-weight: bold;
-    font-size: 28px;
-    padding-top: 43px;
-}
-
-.contenedor-entradas .titulo p{
-    width: 40%;
-    font-size: 12px;
-    color: #8D8D8D;
-}
-.contenedor-entradas .titulo{
-    margin: auto;
 }
 
 
 /*--------------------------------------------------------------
-# Especialidades
+# paginacion
 --------------------------------------------------------------*/
 
-.contenedor-especialidades{
-     margin-top: 110px;
+.pagination {
+    clear:both;
+    padding:20px 0;
+    position:relative;
+    font-size:11px;
+    line-height:13px;
 }
-
-.contenedor-especialidades .titulo h1{
-    font-size: 34px;
-    color: #011342;
-    font-weight: bold;
+ 
+.pagination span, .pagination a {
+    display:block;
+    float:left;
+    margin: 2px 2px 2px 0;
+    padding:6px 9px 5px 9px;
+    text-decoration:none;
+    width:auto;
+    color:#fff;
+    background: #555;
 }
-
-.contenedor-especialidades .imagen img{
-
+ 
+.pagination a:hover{
+    color:#fff;
+    background: #3279BB;
 }
-
-.contenedor-especialidades .texto p{
-    font-size: 16px;
-    margin: auto;
-    color: #8D8D8D;
-    margin-bottom: 20px;
+ 
+.pagination .current{
+    padding:6px 9px 5px 9px;
+    background: #3279BB;
+    color:#fff;
 }
-
-/*--------------------------------------------------------------
-# img footer
---------------------------------------------------------------*/
-
-img.img-footer {
-    margin-top: 40px;
-}
-

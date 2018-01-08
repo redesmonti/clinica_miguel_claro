@@ -27,6 +27,7 @@
                   </div>
                     <h3><?php the_title(); ?></h3>
                     <div class="descripcion"><?php the_content(); ?></div>
+                    
                     <a href="<?php the_permalink(); ?>">Leer más</a> 
                   </div>
                   
@@ -35,6 +36,6 @@
                   <?php } ?>
             <?php $i++;endwhile; endif; ?>
     </div>
-    <a href=" http://pruebabrother.96.lt/ver-noticias/" class="btn btn-primary" role="button" aria-pressed="true">Ver mas noticias</a>
+    <a href=" http://pruebabrother.96.lt/ver-noticias/" class="ver-mas-noticias btn btn-primary" role="button" aria-pressed="true">Ver mas noticias</a>
   </div>        
 </div>

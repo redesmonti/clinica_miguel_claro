@@ -6,6 +6,19 @@
     </div>
     <div class="contenedor-mapa-form">
     	<div class="formulario">
+            <form action="http://carlosmellan.96.lt/contact.php" enctype="" method="post" >
+                <p>Nombre:</p>
+                <input name="name" type="text" placeholder="ingrese su nombre" required />
+                <p>Correo Electrónico:</p>
+                <input name="email" type="email" placeholder="Ingrese su correo electrónico" required />
+                <p>Teléfono:</p>
+                <input name="telefono" type="text" placeholder="ingrese su teléfono" required />
+                <p>Contenido:</p>
+                <textarea class="textareacontent" name="content" rows="8" placeholder="Ingrese el contenido de su mensaje" required></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Enviar" />
+            </form>
             <?php echo do_shortcode( '[contact-form-7 id="57" title="Contacto Clinica"]' ); ?>
     		
     	</div>
